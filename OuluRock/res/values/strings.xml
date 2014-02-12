@@ -4,7 +4,8 @@
     <string name="app_name">OuluRock</string>
     <string name="edit_message">Enter a Message</string>
     <string name="button_send">Send</string>
-    <string name="action_settings">$ettings</string>
+    <string name="action_settings">Setting$</string>
     <string name="hello_world">Hello Keigan!!</string>
+    <string name="title_activity_display_message">My Rockin Message</string>
 
 </resources>
