@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -15,6 +16,8 @@ public class ActivityName extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_name);
+        
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void sendMessage(View view) {
@@ -30,7 +33,34 @@ public class ActivityName extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.activity_name, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+    	switch (item.getItemId()) {
+    	case R.id.action_search:
+    		openSearch();
+    		return true;
+    	case R.id.action_settings:
+    		openSettings();
+    		return true;
+    	default:
+    		return super.onOptionsItemSelected(item);
+    	}
+    }
+    
+    private void openSearch() {
+    	Intent intent = new Intent(this, DisplayMessageActivity.class);
+    	intent.putExtra(EXTRA_MESSAGE, "Start Search");
+    	startActivity(intent);
+   	
+    }
+    private void openSettings() {
+    	Intent intent = new Intent(this, DisplayMessageActivity.class);
+    	intent.putExtra(EXTRA_MESSAGE, "Settings");
+    	startActivity(intent);    	
+    }
+    
     
 }
