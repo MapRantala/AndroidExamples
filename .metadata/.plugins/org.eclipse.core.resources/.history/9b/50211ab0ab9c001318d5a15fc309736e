@@ -1,0 +1,15 @@
+package com.androidbook.triviaquiz;
+import android.app.Activity;
+import android.content.SharedPreferences;
+
+public class QuizActivity extends Activity {
+	public static final String GAME_PREFERENCES = "GamePrefs";
+
+	protected static String getAppPreferences(){
+		SharedPreference settings = getSharedPreferences(GAME_PRERENCES, MODE_PRIVATE);
+		if (settings.contains("UserName" == true)) {
+			String user = Settings.getString("UserName","Default");
+		}
+		}
+	}
+}

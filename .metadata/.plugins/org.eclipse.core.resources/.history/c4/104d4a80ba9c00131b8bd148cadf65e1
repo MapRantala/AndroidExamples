@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Been There, Done That!</string>
+    <string name="help">Help Screen</string>
+    <string name="menu">Main Menu Screen</string>
+    <string name="splash_top">Been There</string>
+    <string name="splash_bottom">Done That</string>
+    <string name="splash_version">1.0.1</string>
+    <string name="settings">Settings Screen</string>
+    <string name="game">Game Screen</string>
+    <string name="scores">Score Screen</string>
+</resources>
