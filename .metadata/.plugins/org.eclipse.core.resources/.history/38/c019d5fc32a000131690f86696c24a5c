@@ -1,0 +1,31 @@
+package com.androidbook.triviaquiz;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
+import android.widget.TableLayout;
+
+public class QuizMenuActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.menu);
+		
+		Animation spinin = AnimationUtils.loadAnimation(this, R.anim.custom_anim);
+		LayoutAnimationController controller = new LayoutAnimationController(spinin);
+		TableLayout table = (TableLayout) findViewById(R.id.splash_primarylayout);
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.quiz_menu, menu);
+		return true;
+	}
+
+}

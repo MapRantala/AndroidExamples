@@ -10,5 +10,9 @@
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.view.animation.Animation"/>
 <fullyQualifiedTypeName name="com.androidbook.triviaquiz.R.anim"/>
+<fullyQualifiedTypeName name="android.view.animation.LayoutAnimationController"/>
+<fullyQualifiedTypeName name="android.widget.TableLayout"/>
+<fullyQualifiedTypeName name="android.widget.TableRow"/>
 <fullyQualifiedTypeName name="com.androidbook.triviaquiz.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
 </qualifiedTypeNameHistroy>
